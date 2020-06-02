@@ -1,38 +1,50 @@
-.App {
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    color: #091f3b;
+}
+
+.todoCenter {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0px 2px 4px rgba(31, 49, 53, 0.3);
+ 
+}
+
+.Header {
   text-align: center;
+  font-weight: 600;
+  box-shadow: 0px 2px 4px rgba(31, 49, 53, 0.3);
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.buttonStyle {
+  float: right;
+  border-radius: 50%;
+  height: 20px;
+  border: 0px;
+  font-size: 10px;
+  font-weight: 700;
   color: white;
+  background-color: #eee;
 }
 
-.App-link {
-  color: #61dafb;
+div.line {
+  border-bottom: 1px solid #091f3b57;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.line:last-child {
+  border-bottom: none;
 }

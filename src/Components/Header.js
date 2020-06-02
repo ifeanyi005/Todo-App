@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = (props) => {
     return (
-        <div>
-            You have {props.numTodo} tasks
+        <div className="Header">
+            You have {props.numTodo} Todos
         </div>
     )
 }
