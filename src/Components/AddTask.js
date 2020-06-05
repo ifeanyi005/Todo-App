@@ -9,7 +9,7 @@ export class AddTask extends Component {
         }
     }
 
-    handleSubmit(e){
+    handleSubmit(e) {
         e.preventDefault(e)
         if (this.state.newTask === '') return;
         this.props.onSubmit(this.state.newTask);
