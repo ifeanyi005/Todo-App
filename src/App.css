@@ -11,22 +11,27 @@ body {
     margin: 0;
     position: relative;
     color: #091f3b;
+    font-size: 14px;
 }
 
 .todoCenter {
   width: 500px;
   margin: 0 auto;
   margin-top: 10px;
-  box-shadow: 0px 2px 4px rgba(31, 49, 53, 0.3);
- 
+  box-shadow: 0px 2px 30px -15px rgba(31, 49, 53, 0.3);
+  border-radius: 5px;
+  border: 1px solid #fcf4f4;
 }
 
 .Header {
   text-align: center;
   font-weight: 600;
-  box-shadow: 0px 2px 4px rgba(31, 49, 53, 0.3);
-  padding: 10px;
-  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(196, 196, 196, 0.3);
+  padding: 20px ;
+  margin-bottom: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 16px;
 }
 
 .buttonStyle {
@@ -41,10 +46,29 @@ body {
 }
 
 div.line {
-  border-bottom: 1px solid #091f3b57;
-  padding: 10px;
+  border-bottom: 1px solid #b0b0b057;
+  padding: 20px;
 }
 
 div.line:last-child {
   border-bottom: none;
+}
+
+form {
+  padding: 0 20px 20px;
+}
+
+form input {
+
+    padding: 14px 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #b0b0b057;
+    border-radius: 5px;
+}
+form button {
+  padding: 15px;
+    width: 27%;
+    border: 1px solid #b0b0b057;
+    border-radius: 5px;
 }

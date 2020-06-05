@@ -7,9 +7,9 @@ const TodoList = (props) => {
     )
 
     return (
-        <React.Fragment>
+        <div>
             {todos}
-        </React.Fragment>
+        </div>
     )
 }
 

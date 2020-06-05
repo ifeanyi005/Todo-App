@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Header'
 import Todolist from './TodoList'
+import AddTask from './AddTask'
 
 export class TodoApp extends Component {
     constructor(props) {
@@ -16,11 +17,18 @@ export class TodoApp extends Component {
         this.setState({ tasks: newArr });
     }
 
+    handleSubmit = task => {
+        this.setState({
+            tasks: [...this.state.tasks, task]
+        })
+    }
+
     render() {
         return (
             <div>
                 <Header numTodo={this.state.tasks.length} />
                 <Todolist tasks={this.state.tasks} onDelete={this.handleDelete} />
+                <AddTask onSubmit={this.handleSubmit} />
             </div>
         )
     }
